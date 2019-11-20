@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "127789822535",
+    "firebase_url": "https://memory-games-b84eb.firebaseio.com",
+    "project_id": "memory-games-b84eb",
+    "storage_bucket": "memory-games-b84eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127789822535:android:5177cdf4542783ce",
+        "android_client_info": {
+          "package_name": "com.example.memorygames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127789822535-sg2fofoue3d34r3otk2a3tij37jogofp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.memorygames",
+            "certificate_hash": "c19714580e6c380a1ef84b1b2e69707d8f84a0d8"
+          }
+        },
+        {
+          "client_id": "127789822535-s4tbjl3iuhscvutmigs463u8bqfe16bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5AqlqnBgf7QP0Scz2CDU6rPOlEl0bTS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127789822535-s4tbjl3iuhscvutmigs463u8bqfe16bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.memorygames">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".PopUp1"
+            android:theme="@style/PopMe" />
+        <activity android:name=".easy_level.Score_easy" />
+        <activity android:name=".medium_level.Game8.G_m_8_3" />
+        <activity android:name=".medium_level.Game8.G_m_8_2" />
+        <activity android:name=".medium_level.Game8.G_m_8_1" />
+        <activity android:name=".medium_level.Game7.G_m_7_3" />
+        <activity android:name=".medium_level.Game7.G_m_7_2" />
+        <activity android:name=".medium_level.Game7.G_m_7_1" />
+        <activity android:name=".medium_level.Game6.G_m_6_3" />
+        <activity android:name=".medium_level.Game6.G_m_6_2" />
+        <activity android:name=".medium_level.Game6.G_m_6_1" />
+        <activity android:name=".medium_level.Game5.G_m_5_3" />
+        <activity android:name=".medium_level.Game5.G_m_5_2" />
+        <activity android:name=".medium_level.Game5.G_m_5_1" />
+        <activity android:name=".medium_level.Game4.G_m_4_3" />
+        <activity android:name=".medium_level.Game4.G_m_4_2" />
+        <activity android:name=".medium_level.Game4.G_m_4_1" />
+        <activity android:name=".medium_level.Game3.G_m_3_3" />
+        <activity android:name=".medium_level.Game3.G_m_3_2" />
+        <activity android:name=".medium_level.Game3.G_m_3_1" />
+        <activity android:name=".hard_level.Game8.G_h_8_3" />
+        <activity android:name=".hard_level.Game8.G_h_8_2" />
+        <activity android:name=".hard_level.Game8.G_h_8_1" />
+        <activity android:name=".hard_level.Game7.G_h_7_3" />
+        <activity android:name=".hard_level.Game7.G_h_7_2" />
+        <activity android:name=".hard_level.Game7.G_h_7_1" />
+        <activity android:name=".hard_level.Game6.G_h_6_3" />
+        <activity android:name=".hard_level.Game6.G_h_6_2" />
+        <activity android:name=".hard_level.Game6.G_h_6_1" />
+        <activity android:name=".hard_level.Game5.G_h_5_3" />
+        <activity android:name=".hard_level.Game5.G_h_5_2" />
+        <activity android:name=".hard_level.Game5.G_h_5_1" />
+        <activity android:name=".hard_level.Game4.G_h_4_3" />
+        <activity android:name=".hard_level.Game4.G_h_4_2" />
+        <activity android:name=".hard_level.Game4.G_h_4_1" />
+        <activity android:name=".hard_level.Game3.G_h_3_3" />
+        <activity android:name=".hard_level.Game3.G_h_3_2" />
+        <activity android:name=".hard_level.Game3.G_h_3_1" />
+        <activity android:name=".easy_level.Game8.G_e_8_3" />
+        <activity android:name=".easy_level.Game8.G_e_8_2" />
+        <activity android:name=".easy_level.Game8.G_e_8_1" />
+        <activity android:name=".easy_level.Game7.G_e_7_3" />
+        <activity android:name=".easy_level.Game7.G_e_7_2" />
+        <activity android:name=".easy_level.Game7.G_e_7_1" />
+        <activity android:name=".easy_level.Game6.G_e_6_3" />
+        <activity android:name=".easy_level.Game6.G_e_6_2" />
+        <activity android:name=".easy_level.Game6.G_e_6_1" />
+        <activity android:name=".easy_level.Game5.G_e_5_3" />
+        <activity android:name=".easy_level.Game5.G_e_5_2" />
+        <activity android:name=".easy_level.Game5.G_e_5_1" />
+        <activity android:name=".easy_level.Game4.G_e_4_3" />
+        <activity android:name=".easy_level.Game4.G_e_4_2" />
+        <activity android:name=".easy_level.Game4.G_e_4_1" />
+        <activity android:name=".easy_level.Game3.G_e_3_3" />
+        <activity android:name=".easy_level.Game3.G_e_3_2" />
+        <activity android:name=".easy_level.Game3.G_e_3_1" />
+        <activity android:name=".medium_level.Game2.G_m_2_3" />
+        <activity android:name=".medium_level.Game2.G_m_2_2" />
+        <activity android:name=".medium_level.Game2.G_m_2_1" />
+        <activity android:name=".hard_level.Game2.G_h_2_3" />
+        <activity android:name=".hard_level.Game2.G_h_2_2" />
+        <activity android:name=".hard_level.Game2.G_h_2_1" />
+        <activity android:name=".easy_level.Game2.G_e_2_3" />
+        <activity android:name=".easy_level.Game2.G_e_2_2" />
+        <activity android:name=".easy_level.Game2.G_e_2_1" />
+        <activity android:name=".hard_level.Table_Hard" />
+        <activity android:name=".medium_level.Table_Medium" />
+        <activity android:name=".easy_level.Table_Easy" />
+        <activity android:name=".Level_Choice" />
+        <activity android:name=".hard_level.Game1.G_h_1_3" />
+        <activity android:name=".hard_level.Game1.G_h_1_2" />
+        <activity android:name=".hard_level.Game1.G_h_1_1" />
+        <activity android:name=".medium_level.Game1.G_m_1_3" />
+        <activity android:name=".medium_level.Game1.G_m_1_2" />
+        <activity android:name=".Survey.Questions" />
+        <activity android:name=".medium_level.Game1.G_m_1_1" />
+        <activity android:name=".easy_level.Game1.G_e_1_3" />
+        <activity android:name=".easy_level.Game1.G_e_1_2" />
+        <activity android:name=".easy_level.Game1.G_e_1_1" />
+        <activity android:name=".TableOfGames">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" />
+    </application>
+
+</manifest>

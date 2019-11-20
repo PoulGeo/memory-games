@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medium_level.Game3.G_m_3_1"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    >
+
+<RelativeLayout
+android:id="@+id/relativeLayout"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:layout_marginStart="3dp"
+android:layout_marginEnd="3dp"
+android:orientation="horizontal"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+tools:ignore="MissingConstraints"
+tools:layout_editor_absoluteY="3dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_centerHorizontal="true"
+    android:padding="5dp"
+    android:text="ΒΡΕΣ ΤΗ ΔΡΑΣΤΗΡΙΟΤΗΤΑ"
+    android:textColor="#3F51B5"
+    android:textSize="20sp" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/user" />
+
+    <ImageButton
+        android:id="@+id/help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/help" />
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/close"
+        />
+
+</LinearLayout>
+
+
+</RelativeLayout>
+
+<LinearLayout
+android:id="@+id/ll_instructions"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_marginEnd="16dp"
+android:gravity="center_vertical"
+android:orientation="horizontal"
+app:layout_constraintBottom_toTopOf="@+id/iv_activity"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+<ImageButton
+    android:id="@+id/tv_instructions"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginRight="25dp"
+    android:onClick="playWhat_Activity"
+    android:scaleType="centerInside"
+    android:src="@drawable/speaker" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ΠΟΙΑ ΔΡΑΣΤΗΡΙΟΤΗΤΑ ΤΑΙΡΙΑΖΕΙ ΣΤΗΝ ΕΙΚΟΝΑ;"
+    android:textAlignment="center"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/iv_activity"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    />
+
+</LinearLayout>
+
+<ImageView
+android:id="@+id/iv_activity"
+android:layout_width="250dp"
+android:layout_height="250dp"
+android:src="@drawable/bathroom_sink"
+app:layout_constraintBottom_toTopOf="@+id/choices"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/ll_instructions"/>
+
+<android.support.v7.widget.GridLayout
+android:id="@+id/choices"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_margin="10dp"
+app:columnCount="2"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/iv_activity"
+app:rowCount="2">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    >
+
+    <TextView
+        android:id="@+id/choice01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="ΠΛΕΝΟΥΜΕ ΤΑ ΠΙΑΤΑ"
+        app:layout_column="0"
+        app:layout_row="0"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:onClick="wrong_ans1"
+        />
+
+    <ImageButton
+        android:id="@+id/act_choice_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="playWashing_Dishes"
+        android:scaleType="centerInside"
+        android:src="@drawable/speaker"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/choice02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="ΒΛΕΠΟΥΜΕ ΤΗΛΕΟΡΑΣΗ"
+        app:layout_column="0"
+        app:layout_row="1"
+        android:textSize="20sp"
+        android:onClick="wrong_ans2"
+        />
+
+    <ImageButton
+        android:id="@+id/act_choice_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="playWatching_tv"
+        android:scaleType="centerInside"
+        android:src="@drawable/speaker" />
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    >
+
+    <TextView
+        android:id="@+id/choice03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="ΠΛΕΝΟΥΜΕ ΤΑ ΧΕΡΙΑ"
+        app:layout_column="1"
+        app:layout_row="0"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:onClick="right_ans"
+        />
+
+    <ImageButton
+        android:id="@+id/act_choice_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="playWashing_Hands"
+        android:scaleType="centerInside"
+        android:src="@drawable/speaker"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/choice04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="ΚΡΕΜΑΜΑΙ ΡΟΥΧΑ"
+        app:layout_column="1"
+        app:layout_row="1"
+        android:textSize="20sp"
+        android:onClick="wrong_ans3"
+        />
+
+    <ImageButton
+        android:id="@+id/act_choice_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="playHanging_Clothes"
+        android:scaleType="centerInside"
+        android:src="@drawable/speaker" />
+
+
+
+</LinearLayout>
+
+</android.support.v7.widget.GridLayout>
+
+    </android.support.constraint.ConstraintLayout>

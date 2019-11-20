@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hard_level.Table_Hard">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="ΔΥΣΚΟΛΟ ΕΠΙΠΕΔΟ"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/user"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/user" />
+
+            <ImageButton
+                android:id="@+id/lvl"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/controls" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/tbl_games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_row="0"
+            android:layout_column="0">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="ΒΡΕΣ&#10;ΤΗ ΛΕΞΗ"
+                android:textSize="20sp"
+                android:background="#304FFE"
+                android:textColor="#000"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="ΒΡΕΣ&#10;ΤΟΝ ΕΙΣΒΟΛΕΑ"
+                android:textSize="20sp"
+                android:background="#D50000"
+                android:textColor="#000"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+
+                />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:text="ΒΡΕΣ&#10;ΤΗ ΔΡΑΣΤΗ-&#10;ΡΙΟΤΗΤΑ"
+                android:textSize="20sp"
+                android:background="#D50000"
+                android:textColor="#000"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+
+                />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:scaleType="centerInside"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:text="ΕΙΚΟΝΑ&#10;&amp;&#10;ΗΧΟΣ"
+                android:textSize="20sp"
+                android:background="#304FFE"
+                android:textColor="#000"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_row="1"
+            android:layout_column="0">
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:scaleType="centerInside"
+                android:src="#6200EA"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="20sp"
+                android:background="#0000"
+                android:textColor="#000"
+                />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:scaleType="centerInside"
+                android:src="#FFD600"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="20sp"
+                android:background="#0000"
+                android:textColor="#000"
+                />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:scaleType="centerInside"
+                android:src="#64DD17"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="20sp"
+                android:background="#0000"
+                android:textColor="#000"
+                />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:scaleType="centerInside"
+                android:src="#C51162"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="20sp"
+                android:background="#0000"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
